@@ -1,8 +1,8 @@
 import requests, json
 
-image_url = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+image_url = 'https://www.kivano.kg/images/product/114889/1670556729_45777900.jpg'
 
 response = requests.get(image_url)
 
-with open("test.jpg", "wb") as file:
+with open("images/test.jpg", "wb") as file:
     file.write(response.content)
